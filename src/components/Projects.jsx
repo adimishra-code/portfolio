@@ -27,11 +27,8 @@ function ProjectCard({ project, index }) {
             {project.video ? (
               <video
                 src={project.video}
-                autoPlay
-                loop
-                muted
-                playsInline
                 controls
+                playsInline
                 preload="metadata"
               />
             ) : (
