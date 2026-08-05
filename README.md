@@ -2,7 +2,7 @@
 
 My personal portfolio — a GitHub-styled developer site built with React.
 
-**Live:** coming soon
+**Live:** [portfolio-adiimishraa.vercel.app](https://portfolio-adiimishraa.vercel.app/)
 
 ## Features
 
