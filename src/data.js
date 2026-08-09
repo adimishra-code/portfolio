@@ -113,7 +113,7 @@ export const education = [
     ref: "(HEAD → main)",
     date: "2024 — Present",
     school: "Gautam Buddha University",
-    detail: "B.Tech — Information Technology · 2nd Year",
+    detail: "B.Tech — Information Technology · 3rd Year",
     head: true,
     sgpa: [
       { label: "Sem 1", value: "7.36" },
