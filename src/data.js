@@ -31,6 +31,7 @@ export const typedInterests = [
   "AI-powered platforms",
   "Backend Engineering",
   "System Design",
+  "Security Auditing",
   "RAG pipelines",
   "Real-time applications",
 ];
@@ -51,6 +52,7 @@ export const projects = [
       { label: "JavaScript", dot: "js" },
     ],
     repo: "https://github.com/adimishra-code",
+    live: "https://docsmind-beige.vercel.app",
     video: "/videos/docsmind.mp4",
   },
   {
@@ -68,42 +70,43 @@ export const projects = [
       { label: "Node.js", dot: "node" },
     ],
     repo: "https://github.com/adimishra-code",
+    live: "https://campuspool.pages.dev/",
     video: "/videos/campuspool.mp4",
   },
   {
-    id: "etcs",
-    name: "ETCS",
-    emoji: "🚦",
-    badge: "Hackathon",
+    id: "extensionguard",
+    name: "ExtensionGuard",
+    emoji: "🛡️",
     description:
-      "Emergency Traffic Control System — tracks emergency vehicles, finds the fastest route, and dynamically adjusts traffic signals to clear a path. Live monitoring dashboard for traffic & active emergency vehicles.",
+      "Automated browser extension security auditing platform — analyzes Chrome extensions via a 5-stage pipeline: safe ingestion, AST static analysis, Playwright sandbox dynamic analysis, LLM verification & 0–100 risk scoring.",
     contribution:
-      "Built backend logic, REST APIs, DB design & mapping integrations.",
-    stack: ["MongoDB", "Express.js", "React", "Node.js", "REST APIs", "Socket.IO", "Google Maps API"],
-    highlights: "Routing · Signal Priority · Live Dashboard",
+      "Architected the 5-stage auditing pipeline, AST analysis engine, Playwright sandbox & AI verification system.",
+    stack: ["React", "TypeScript", "Fastify", "PostgreSQL", "Redis", "Playwright", "AST Analysis", "LLM Verification"],
+    highlights: "50+ Dangerous APIs · Network Exfiltration · AST Analysis · 0–100 Risk Score",
     langs: [
-      { label: "JavaScript", dot: "js" },
-      { label: "Node.js", dot: "node" },
+      { label: "TypeScript", dot: "ts" },
+      { label: "React", dot: "js" },
     ],
     repo: "https://github.com/adimishra-code",
-    video: "/videos/etcs.mp4",
+    live: "https://extensionguard-web.onrender.com/",
+    video: "/videos/extension-guard.mp4",
   },
 ];
 
 export const skills = [
-  { title: "languages", items: ["Python", "Java", "JavaScript", "C"] },
+  { title: "languages", items: ["TypeScript", "JavaScript", "Python", "Java", "C"] },
   { title: "frontend", items: ["React", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"] },
-  { title: "backend", items: ["Node.js", "Express.js", "FastAPI"] },
+  { title: "backend", items: ["Node.js", "Express.js", "FastAPI", "Fastify"] },
   { title: "databases", items: ["MongoDB", "PostgreSQL", "Redis", "Qdrant"] },
   { title: "ai / ml", items: ["LangChain", "LangGraph", "RAG", "OCR", "Prompt Engineering"] },
-  { title: "tools", items: ["Git", "GitHub", "Docker", "Postman", "VS Code", "Figma"] },
+  { title: "tools", items: ["Git", "GitHub", "Docker", "Playwright", "Postman", "VS Code", "Figma"] },
 ];
 
 export const langBar = [
-  { label: "JavaScript", dot: "js", seg: "seg-js", pct: 34 },
-  { label: "Python", dot: "py", seg: "seg-py", pct: 28 },
-  { label: "Java", dot: "java", seg: "seg-java", pct: 16 },
-  { label: "CSS", dot: "css", seg: "seg-css", pct: 12 },
+  { label: "TypeScript", dot: "ts", seg: "seg-ts", pct: 30 },
+  { label: "JavaScript", dot: "js", seg: "seg-js", pct: 28 },
+  { label: "Python", dot: "py", seg: "seg-py", pct: 22 },
+  { label: "Java", dot: "java", seg: "seg-java", pct: 10 },
   { label: "C", dot: "c", seg: "seg-c", pct: 10 },
 ];
 

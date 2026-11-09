@@ -42,30 +42,49 @@ function ProjectCard({ project, index }) {
             {project.emoji} {project.description}
           </p>
           <div className="repo-foot">
-            {project.langs.map((l) => (
-              <span className="repo-lang" key={l.label}>
-                <i className={`lang-dot ${l.dot}`} />
-                {l.label}
-              </span>
-            ))}
-            {project.repo && (
-              <a
-                className="repo-source"
-                href={project.repo}
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="repo-meta-row">
+              <div className="repo-langs">
+                {project.langs.map((l) => (
+                  <span className="repo-lang" key={l.label}>
+                    <i className={`lang-dot ${l.dot}`} />
+                    {l.label}
+                  </span>
+                ))}
+              </div>
+              <button
+                type="button"
+                className="flip-btn"
+                onClick={() => setFlipped(true)}
+                aria-label={`Show tech stack for ${project.name}`}
               >
-                Source ↗
-              </a>
-            )}
-            <button
-              type="button"
-              className="flip-btn"
-              onClick={() => setFlipped(true)}
-              aria-label={`Show tech stack for ${project.name}`}
-            >
-              tech stack ↻
-            </button>
+                tech stack ↻
+              </button>
+            </div>
+            <div className="repo-actions-row">
+              {project.live && (
+                <a
+                  className="btn-live-demo"
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Live demo for ${project.name}`}
+                >
+                  <span className="live-dot" />
+                  Live Demo ↗
+                </a>
+              )}
+              {project.repo && (
+                <a
+                  className="repo-source-btn"
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Source code for ${project.name}`}
+                >
+                  Source ↗
+                </a>
+              )}
+            </div>
           </div>
         </article>
 
@@ -92,6 +111,31 @@ function ProjectCard({ project, index }) {
             ))}
           </div>
           <div className="back-foot">{project.highlights}</div>
+          <div className="repo-actions-row">
+            {project.live && (
+              <a
+                className="btn-live-demo"
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Live demo for ${project.name}`}
+              >
+                <span className="live-dot" />
+                Live Demo ↗
+              </a>
+            )}
+            {project.repo && (
+              <a
+                className="repo-source-btn"
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Source code for ${project.name}`}
+              >
+                Source ↗
+              </a>
+            )}
+          </div>
         </article>
       </div>
     </motion.div>
